@@ -18,8 +18,6 @@ public class App {
         genericIntegerBox.print();
 
         Box<Double> genericDoubleBox = new Box<>(3.14);
-        genericDoubleBox.print();
-
-        Box<int> list = new Box(3);
+        genericDoubleBox.print(); 
     }
 }
