@@ -5,6 +5,21 @@ package at.fhj.msd;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        StringBox stringBox = new StringBox("MSD");
+        stringBox.print();
+
+        IntegerBox integerBox = new IntegerBox(1234);
+        integerBox.print();
+
+        Box<String> genericStringBox = new Box<>("YOLO");
+        genericStringBox.print();
+
+        Box<Integer> genericIntegerBox = new Box<>(42);
+        genericIntegerBox.print();
+
+        Box<Double> genericDoubleBox = new Box<>(3.14);
+        genericDoubleBox.print();
+
+        Box<int> list = new Box(3);
     }
 }
